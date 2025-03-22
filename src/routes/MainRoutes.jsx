@@ -2,6 +2,7 @@ import { lazy } from 'react';
 
 import AdminLayout from 'layouts/AdminLayout';
 import GuestLayout from 'layouts/GuestLayout';
+import UsersComponent from '../views/users';
 
 const DashboardSales = lazy(() => import('../views/dashboard/DashSales/index'));
 
@@ -25,8 +26,12 @@ const MainRoutes = {
       element: <AdminLayout />,
       children: [
         {
-          path: '/dashboard/sales',
+          path: '/dashboard',
           element: <DashboardSales />
+        },
+        {
+          path: '/users',
+          element: <UsersComponent />
         },
         {
           path: '/typography',

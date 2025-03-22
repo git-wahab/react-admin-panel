@@ -13,14 +13,17 @@ const menuItems = {
           type: 'collapse',
           icon: 'material-icons-two-tone',
           iconname: 'home',
-          children: [
-            {
-              id: 'sales',
-              title: 'Sales',
-              type: 'item',
-              url: '/dashboard/sales'
-            }
-          ]
+          type: 'item',
+          url: '/dashboard',
+        },
+        {
+          id: 'users',
+          title: 'Users',
+          type: 'collapse',
+          icon: 'material-icons-two-tone',
+          iconname: 'account_circle',
+          type: 'item',
+          url: '/users',
         }
       ]
     },

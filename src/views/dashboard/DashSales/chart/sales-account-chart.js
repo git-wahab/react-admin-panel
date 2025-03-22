@@ -4,7 +4,10 @@ export function SalesAccountChartData() {
     type: 'line',
     options: {
       chart: {
-        background: 'transparent'
+        background: 'transparent',
+        toolbar: {
+          show: false, // Disable toolbar
+        },
       },
       stroke: {
         width: [0, 3],
